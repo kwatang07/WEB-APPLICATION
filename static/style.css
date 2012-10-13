@@ -1,0 +1,140 @@
+body{
+	background: url(images/bg.png) repeat;
+	}
+
+#container {
+	background-color: white;
+	margin-top: 30px;
+	max-height: 420px;
+	overflow: auto;
+	clear: both;
+	border: 2px #0066cc solid;
+	
+}
+
+#twitterSearchApp #mainColumn {
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+	text-align: center;
+	width: 700px;
+	clear: both;
+	
+}
+
+#mainColumn img{
+	width: 350px;
+	height: 270px;
+	z-index: 1;
+}
+
+#searchContainer {
+	margin-top: -145px;
+}
+
+#searchContainer span{
+	color: white;
+	font-size: 20px;
+
+}
+.search-query {
+	width: 140px;
+}
+
+#container {
+	margin-top: -22px;
+	height: 480px;
+	overflow: auto;
+	clear: both;
+	border: 2px rgb(0, 176, 240) solid;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	
+}
+
+#historytab {
+	position: fixed;
+	border: 1px rgb(207, 207, 207) solid;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 150px;
+	height: 400px;
+	overflow: auto;
+}
+#historytab h4 {
+	text-align:center;
+}
+
+#tweetcontainer {
+	margin-top: 25px;
+	margin-left: 200px;
+	
+}
+
+::-webkit-scrollbar {
+	
+	width: 5px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+	height: 30px;
+	display: block;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece  {
+	background-color: transparent;
+	-webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 50px;
+	background-color: #0066cc;
+	border: 1px solid transparent;
+	-webkit-border-radius: 6px;
+}
+
+
+ .search-history {  padding: 0; }
+ .search-history li { margin-left: -25px; display: block; list-style-type: none; padding: 5px; }
+ .search-history li:nth-child(2n) { background-color: #99ccff; }
+ .search-history li:nth-child(2n+1) { background-color: #ccc; }
+ .search-history li:hover { cursor: pointer; background-color: rgb(0, 176, 240); }
+ .search-history li a { color: white; display: block; float: right; text-decoration: none; }
+  
+#footer{
+	font-size: 8px;
+}
+  
+#results { padding:35px 0; padding-bottom:250px; }
+	#results DIV.title { font-weight:bold; font-size:15px; }
+	#results UL#tweets { position:relative; margin-left:-5px; }
+		#results UL#tweets LI { overflow:hidden; margin-bottom:10px; padding:5px 0 5px 5px; }
+		#results UL#tweets LI:hover { background:url(images/bg.gif); }
+			#results UL#tweets LI DIV.profile-pic { float:left; border:1px solid #e5e5e1; margin-right:8px; position:relative; }
+				#results UL#tweets LI DIV.profile-pic IMG { display:block; margin:1px;width:48px;height:48px; }
+			#results UL#tweets LI DIV.tweet-body { overflow:hidden; }
+				#results UL#tweets LI DIV.tweet-body DIV.twitter-name { font-weight:bold; color:#0066cc; font-size:13px; margin-top:2px; }
+				#results UL#tweets LI DIV.tweet-body DIV.twitter-name a {font-weight:bold; color:#0066cc; font-size:13px;text-decoration:none;}
+					#results UL#tweets LI DIV.tweet-body DIV.twitter-name SPAN { font-weight:normal; color:#8d8d8d; margin-bottom:5px; }
+				#results UL#tweets LI DIV.tweet-body DIV.tweet { color:#2f2f2f; font-size:13px; margin-bottom:7px; }
+				#results UL#tweets LI DIV.tweet-body DIV.tweet a {color:#2f2f2f;text-decoration:underline}
+#results UL#tweets LI DIV.tweet-body DIV.actions { font-size:11px; }
+					#results UL#tweets LI DIV.tweet-body DIV.actions A { display:inline-block; color:#8d8d8d; text-decoration:none; }
+					#results UL#tweets LI DIV.tweet-body DIV.actions A:hover { opacity:.8; }
+					#results UL#tweets LI DIV.tweet-body DIV.actions SPAN.icon { display:inline-block; vertical-align:top; margin-right:3px; }
+					#results UL#tweets LI DIV.tweet-body DIV.actions SPAN.icon.tweet-icon { background:url(../images/png.png) 0 -396px; width:16px; height:12px; }
+					#results UL#tweets LI DIV.tweet-body DIV.actions SPAN.icon.reply-icon { background:url(../images/png.png) -26px -396px; width:11px; height:12px; }
+					#results UL#tweets LI DIV.tweet-body DIV.actions SPAN.icon.retweet-icon { background:url(../images/png.png) -46px -396px; width:14px; height:8px; margin-top:2px; }
+					#results UL#tweets LI DIV.tweet-body DIV.actions SPAN.icon.favorite-icon { background:url(../images/png.png) -70px -396px; width:15px; height:15px; position:relative; margin-top:-2px; }
+					
+					
+					#loader { padding-top:50px; }
+						#loader DIV.more-button { width:140px; height:44px; background:url(../images/png.png) 0 -421px; color:#434342; font-size:15px; line-height:40px; cursor:pointer; display:inline-block; }
+							#loader DIV.more-button:hover { background:url(../images/png.png) -152px -421px; }
+						#loader IMG { vertical-align:top; position:relative; margin-top:-10px; margin-right:6px; }
