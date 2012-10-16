@@ -1,116 +1,67 @@
 body{
-	background: url(images/bg.png) repeat;
+	background: url(images/iloveyoumeldy.jpg); 
+	background-repeat:repeat;
 	}
 
-#container {
-	background-color: white;
-	margin-top: 30px;
-	max-height: 420px;
-	overflow: auto;
-	clear: both;
-	border: 2px #0066cc solid;
-	
-}
-
-#twitterSearchApp #mainColumn {
-	position: absolute;
-	left: 50%;
-	margin-left: -350px;
-	text-align: center;
-	width: 700px;
-	clear: both;
-	
-}
-
-#mainColumn img{
-	width: 350px;
-	height: 270px;
+#twitter_logo, #facebook_logo{
+	margin-top: -22px;
+	margin-left: 30px;
+	width: 70px;
+	height: 70px;
 	z-index: 1;
 }
 
-#searchContainer {
-	margin-top: -145px;
-}
-
-#searchContainer span{
-	color: white;
-	font-size: 20px;
-
-}
-.search-query {
-	width: 140px;
-}
-
-#container {
-	margin-top: -22px;
-	height: 480px;
+#searchlist{
+	float: right;
 	overflow: auto;
+	height: 390px;
+	width: 210px;
 	clear: both;
-	border: 2px rgb(0, 176, 240) solid;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	-ms-border-radius: 7px;
-	-o-border-radius: 7px;
-	border-radius: 7px;
-	
 }
 
-#historytab {
-	position: fixed;
-	border: 1px rgb(207, 207, 207) solid;
-	margin-top: 10px;
-	margin-left: 10px;
-	width: 150px;
-	height: 400px;
-	overflow: auto;
+#keyword_logo{
+	width: 70px;
+	float: right;
+	height: 70px;
+	z-index: 1;
 }
-#historytab h4 {
-	text-align:center;
+	
+#container {
+	background: url(images/paper.png);
+	background-size: 825px 661px;
+	background-repeat: no-repeat;
+	top: -22px;
+	height: 550px;
+	overflow: auto;
+	clear: both;	
 }
 
 #tweetcontainer {
 	margin-top: 25px;
-	margin-left: 200px;
-	
-}
-
-::-webkit-scrollbar {
-	
-	width: 5px;
-	height: 10px;
-}
-
-::-webkit-scrollbar-button:start:decrement,
-::-webkit-scrollbar-button:end:increment  {
-	height: 30px;
-	display: block;
-	background-color: transparent;
-}
-
-::-webkit-scrollbar-track-piece  {
-	background-color: transparent;
-	-webkit-border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-	height: 50px;
-	background-color: #0066cc;
-	border: 1px solid transparent;
-	-webkit-border-radius: 6px;
+	margin-left: 100px;	
 }
 
 
- .search-history {  padding: 0; }
- .search-history li { margin-left: -25px; display: block; list-style-type: none; padding: 5px; }
- .search-history li:nth-child(2n) { background-color: #99ccff; }
- .search-history li:nth-child(2n+1) { background-color: #ccc; }
- .search-history li:hover { cursor: pointer; background-color: rgb(0, 176, 240); }
- .search-history li a { color: white; display: block; float: right; text-decoration: none; }
-  
-#footer{
-	font-size: 8px;
+
+#footerpre{
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: center;
+}	
+
+
+
+.container.main {
+	position: relative;
+	top: 70px;
+	height: 500px;
+
 }
-  
+.container.main .span8{
+	height: 500px;
+	overflow-y: auto;
+}
+
 #results { padding:35px 0; padding-bottom:250px; }
 	#results DIV.title { font-weight:bold; font-size:15px; }
 	#results UL#tweets { position:relative; margin-left:-5px; }
