@@ -14,10 +14,16 @@ jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
 
-class MainHandler(webapp2.RequestHandler):
+class TeamHandler(webapp2.RequestHandler):
     def get(self):
 
-        if users.get_current_user():
+        template = jinja_environment.get_template('templates/team.html')
+        self.response.out.write(template.render())
+
+class MainHandler(webapp2.RequestHandler):
+    def get(self):
+	
+	  if users.get_current_user():
             url = users.create_logout_url(self.request.uri)
             url_linktext = 'Logout'
         else:
@@ -31,8 +37,9 @@ class MainHandler(webapp2.RequestHandler):
         }
 
         template = jinja_environment.get_template('templates/index.html')
-        self.response.out.write(template.render(template_values))
+        self.response.out.write(template.render())
 
-app = webapp.WSGIApplication([('/', MainHandler)],
-                             debug=True)
-
+app = webapp.WSGIApplication([
+    ('/home', MainHandler),
+    ('/team', TeamHandler)
+],debug=True)
