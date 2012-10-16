@@ -3,6 +3,13 @@ body{
 	background-repeat:repeat;
 	}
 
+.sidebar-history font{
+	color: white;
+	padding: 2px;
+	font-weight: bold;
+
+}
+	
 #twitter_logo, #facebook_logo{
 	margin-top: -22px;
 	margin-left: 30px;
@@ -11,13 +18,7 @@ body{
 	z-index: 1;
 }
 
-#searchlist{
-	float: right;
-	overflow: auto;
-	height: 390px;
-	width: 210px;
-	clear: both;
-}
+
 
 #keyword_logo{
 	width: 70px;
@@ -25,7 +26,15 @@ body{
 	height: 70px;
 	z-index: 1;
 }
+#searchlist{
+	float: right;
+	overflow: auto;
+	height: 390px;
+	width: 210px;
+	clear: both;
+}
 	
+
 #container {
 	background: url(images/paper.png);
 	background-size: 825px 661px;
@@ -36,9 +45,87 @@ body{
 	clear: both;	
 }
 
+#fbcontainer{
+	background: transparent;
+	left: 50px;
+	top: -22px;
+	height: 625px;
+	overflow-x: none;
+	clear: both;
+}
+
 #tweetcontainer {
 	margin-top: 25px;
 	margin-left: 100px;	
+}	
+
+#teamcontainer {
+	height: 80px;
+	margin-top: 10px;
+	padding-left: 50px;
+}
+
+#teamcontainer input{
+	margin-top: 5px;
+	margin-right: 40px;
+	height: 50px;
+	width: 50px;
+}
+
+input#sonnypic{
+	background: url(images/sonny.png);
+	background-size: 50px 50px;
+}
+
+input#meldypic{
+	background: url(images/meldy.png);
+	background-size: 50px 50px;
+}
+input#topheepic{
+	background: url(images/tophee.png);
+	background-size: 50px 50px;
+}
+input#jhenapic{
+	background: url(images/jhena.png);
+	background-size: 50px 50px;
+}
+
+input#shepic{
+	background: url(images/she.png);
+	background-size: 50px 50px;
+}
+
+#profile li{
+	display: none;
+
+}
+#infocontainer {
+	height: 420px;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+
+.forimg, .fortxt{
+	margin-top: 10px;
+}
+
+.forimg img, .forintro img{
+	border: 1px solid rgba(75, 75, 75, 1);
+}
+.fortxt{
+	height: 420px;
+	
+}
+
+
+
+.forintro{
+	height: 420px;
+	
+}
+
+.span12 {
+	text-align: center;
 }
 
 
@@ -48,8 +135,6 @@ body{
 	color: #FFFFFF;
 	text-align: center;
 }	
-
-
 
 .container.main {
 	position: relative;
@@ -89,3 +174,4 @@ body{
 						#loader DIV.more-button { width:140px; height:44px; background:url(../images/png.png) 0 -421px; color:#434342; font-size:15px; line-height:40px; cursor:pointer; display:inline-block; }
 							#loader DIV.more-button:hover { background:url(../images/png.png) -152px -421px; }
 						#loader IMG { vertical-align:top; position:relative; margin-top:-10px; margin-right:6px; }
+						
