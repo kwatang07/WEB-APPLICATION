@@ -1,5 +1,5 @@
 body{
-	background: url(images/iloveyoumeldy.jpg); 
+	background: url(images/bgblue.gif); 
 	background-repeat:repeat;
 	}
 
@@ -42,7 +42,44 @@ body{
 	top: -22px;
 	height: 550px;
 	overflow: auto;
-	clear: both;	
+	clear: both;
+}
+
+
+#welcome {
+padding-left: 10px;
+padding-right: 10px;
+text-align: center;
+overflow: none;
+}
+
+#welcome h2 {
+	color: #6D8BC9;
+	margin-top: 15px;
+	font-size: 95px;
+	font-weight: bold;
+	text-shadow: 0px -2px 0px #fff,
+                  0px 2px 10px #666;
+}
+
+#welcome h3{
+	color:  #33ccff;
+	margin-top: 2px;
+	font-size: 70px;
+	font-weight: bold;
+	text-shadow: 0px -2px 0px #fff,
+                  0px 2px 10px #666;
+}
+#welcome p{
+	font-weight: bold;
+	margin-top: 20px;
+	font-size: 13px;
+}
+
+#welcome h4{
+	margin-top: 0px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 #fbcontainer{
@@ -73,25 +110,25 @@ body{
 }
 
 input#sonnypic{
-	background: url(images/sonny.png);
+	background: url(images/sonny.PNG);
 	background-size: 50px 50px;
 }
 
 input#meldypic{
-	background: url(images/meldy.png);
+	background: url(images/meldy.PNG);
 	background-size: 50px 50px;
 }
 input#topheepic{
-	background: url(images/tophee.png);
+	background: url(images/tophee.PNG);
 	background-size: 50px 50px;
 }
 input#jhenapic{
-	background: url(images/jhena.png);
+	background: url(images/jhena.PNG);
 	background-size: 50px 50px;
 }
 
 input#shepic{
-	background: url(images/she.png);
+	background: url(images/she.PNG);
 	background-size: 50px 50px;
 }
 
@@ -114,9 +151,15 @@ input#shepic{
 }
 .fortxt{
 	height: 420px;
+
 	
 }
 
+.fortxt p{
+	font-size: 12px;
+	text-align:justify;
+	
+}
 
 
 .forintro{

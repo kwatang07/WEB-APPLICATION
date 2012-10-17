@@ -350,6 +350,7 @@ $(function(){
 		},
 
 		onSearch: function() {
+			this.$('#welcome').fadeOut(500);
 			var isFB = false;
 			var isTwitter = false;
 
